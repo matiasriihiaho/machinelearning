@@ -12,7 +12,6 @@ st.title('Natural Language Processing Demo')
 st.write('---------------------------------------------------------------------')
 st.subheader('Sentiment analysis')
 
-
 txt = st.text_area('Add English text below for sentiment analaysis (press Ctrl + Enter to apply):', ''' This is an example of a sentence with a very terrible sentiment!''')
 
 def run_sentiment_analysis(asd):
@@ -125,26 +124,12 @@ st.write('---------------------------------------------------------------------'
 
 st.write("Result: ", clas_input_result)
 
-
-
 prob_dist = cl.prob_classify(clas_input)
 st.write('The probability of this statement being positive is: ')
 st.write(round(prob_dist.prob("pos"), 2))
 st.write('The probability of this statement being negative is: ')
 st.write(round(prob_dist.prob("neg"), 2))
 st.write('Model accuracy: ', round(cl.accuracy(test),2))
-st.write(cl.show_informative_features(5))
-
-
-
-
-
-
-
-
-
-
-
 
 
 
