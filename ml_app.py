@@ -8,7 +8,7 @@ from textblob.np_extractors import ConllExtractor
 import pandas as pd
 from textblob.classifiers import NaiveBayesClassifier
 #from collections import Collections
-#import nltk_utils
+import nltk_utils
 
 import subprocess
 import sys
