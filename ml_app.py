@@ -6,24 +6,26 @@ from textblob import TextBlob
 from textblob.np_extractors import ConllExtractor
 #import random
 import pandas as pd
+import nltk
 import nltk.data
 from textblob.classifiers import NaiveBayesClassifier
 from nltk import word_tokenize,sent_tokenize
 #from collections import Collections
 #import nltk_utils
 import nltk
+
+
 #nltk.download('punkt')
-
-import subprocess
-import sys
-
-subprocess.run([f"{sys.executable}", "nltk_utils.py"])
+#import subprocess
+#import sys
+#subprocess.run([f"{sys.executable}", "nltk_utils.py"])
 
 
 #python -m textblob.download_corpora
 #https://www.nltk.org/data.html
 #nltk.download()
 
+nltk.download('punkt')
 
 st.title('Natural Language Processing Demo')
 st.write('---------------------------------------------------------------------')
