@@ -8,7 +8,9 @@ from textblob.np_extractors import ConllExtractor
 import pandas as pd
 from textblob.classifiers import NaiveBayesClassifier
 #from collections import Collections
-import nltk_utils
+#import nltk_utils
+#import nltk
+#nltk.download('punkt')
 
 import subprocess
 import sys
@@ -19,6 +21,7 @@ subprocess.run([f"{sys.executable}", "nltk_utils.py"])
 #python -m textblob.download_corpora
 #https://www.nltk.org/data.html
 #nltk.download()
+
 
 st.title('Natural Language Processing Demo')
 st.write('---------------------------------------------------------------------')
