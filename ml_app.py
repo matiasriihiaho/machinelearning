@@ -7,6 +7,10 @@ from textblob.np_extractors import ConllExtractor
 #import random
 import pandas as pd
 from textblob.classifiers import NaiveBayesClassifier
+import nltk
+
+#https://www.nltk.org/data.html
+#nltk.download()
 
 st.title('Natural Language Processing Demo')
 st.write('---------------------------------------------------------------------')
