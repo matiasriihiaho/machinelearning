@@ -7,7 +7,7 @@ from textblob.np_extractors import ConllExtractor
 #import random
 import pandas as pd
 from textblob.classifiers import NaiveBayesClassifier
-from collections import Collections
+#from collections import Collections
 import nltk
 
 import subprocess
