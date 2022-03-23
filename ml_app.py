@@ -6,6 +6,7 @@ from textblob import TextBlob
 from textblob.np_extractors import ConllExtractor
 #import random
 import pandas as pd
+import nltk.data
 from textblob.classifiers import NaiveBayesClassifier
 from nltk import word_tokenize,sent_tokenize
 #from collections import Collections
