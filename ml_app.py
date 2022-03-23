@@ -9,7 +9,7 @@ import pandas as pd
 from textblob.classifiers import NaiveBayesClassifier
 #from collections import Collections
 #import nltk_utils
-#import nltk
+import nltk
 #nltk.download('punkt')
 
 import subprocess
