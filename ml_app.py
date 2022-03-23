@@ -8,12 +8,13 @@ from textblob.np_extractors import ConllExtractor
 import pandas as pd
 from textblob.classifiers import NaiveBayesClassifier
 #from collections import Collections
-import nltk
+#import nltk_utils
 
 import subprocess
-cmd = ['python3','-m','textblob.download_corpora']
-subprocess.run(cmd)
-print("Working")
+import sys
+
+subprocess.run([f"{sys.executable}", "nltk_utils.py"])
+
 
 #python -m textblob.download_corpora
 #https://www.nltk.org/data.html
