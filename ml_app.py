@@ -1,30 +1,12 @@
-#from dis import findlinestarts
-#from unittest import result
-#from soupsieve import escape
+
 import streamlit as st
 from textblob import TextBlob
 from textblob.np_extractors import ConllExtractor
-#import random
 import pandas as pd
-import nltk
-import nltk.data
 from textblob.classifiers import NaiveBayesClassifier
-from nltk import word_tokenize,sent_tokenize
-#from collections import Collections
-#import nltk_utils
+import nltk.data
 import nltk
-
-
-#nltk.download('punkt')
-#import subprocess
-#import sys
-#subprocess.run([f"{sys.executable}", "nltk_utils.py"])
-
-
-#python -m textblob.download_corpora
-#https://www.nltk.org/data.html
-#nltk.download()
-
+from nltk import word_tokenize,sent_tokenize
 
 @st.cache
 def load_punkt():
@@ -32,11 +14,11 @@ def load_punkt():
 
 load_punkt()
 
-st.title('Natural Language Processing Demo')
+st.title('Natural Language Processing (NLP) Demo')
 st.write('---------------------------------------------------------------------')
 st.subheader('Sentiment analysis')
 
-txt = st.text_area('Add English text below for sentiment analaysis (press Ctrl + Enter to apply):', ''' This is an example of a sentence with a very terrible sentiment!''')
+txt = st.text_area('Add English text below for sentiment analaysis (press Ctrl + Enter to apply):', ''' This is an example of a sentence with terrible sentiment! This day has been horrible!''')
 
 def run_sentiment_analysis(asd):
      result = TextBlob(asd).polarity
@@ -134,7 +116,7 @@ st.table(df)
 
 st.write('---------------------------------------------------------------------')
 
-clas_input = st.text_area('Add any English sentence below for Naive Bayes clasification: ', ''' I really hate this place!''')
+clas_input = st.text_area('Add any English sentence below for Naive Bayes clasification: ', ''' I really hate this place! The food here is terrible.''')
 clas_input_str = cl.classify(clas_input)
 
 
