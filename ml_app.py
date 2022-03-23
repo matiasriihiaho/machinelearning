@@ -25,7 +25,12 @@ import nltk
 #https://www.nltk.org/data.html
 #nltk.download()
 
-nltk.download('punkt')
+
+@st.cache
+def load_punkt():
+     return nltk.download('punkt')
+
+load_punkt()
 
 st.title('Natural Language Processing Demo')
 st.write('---------------------------------------------------------------------')
