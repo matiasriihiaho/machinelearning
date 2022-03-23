@@ -1,4 +1,4 @@
 pandas
 streamlit==1.7.0
 textblob==0.17.1
-nltk_utils
+nltk_utils.py
