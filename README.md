@@ -1,2 +1,2 @@
-# machinelearning
-A repo with my ML projects and web app
+# NPL app
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/[matiasriihiaho]/[machinelearning]/[main]/[ml_app.py)
