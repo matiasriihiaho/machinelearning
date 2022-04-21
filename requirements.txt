@@ -1,5 +1,5 @@
 pandas
 nltk
-streamlit==1.7.0
-textblob==0.17.1
+streamlit
+textblob
 click==8.0.4
